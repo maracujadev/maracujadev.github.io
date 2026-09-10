@@ -1,8 +1,15 @@
-# Main Homepage
-there is nothing here yet.
+## Welcome
 
-## Sample Headline
-some text
-### Yet another
+A short intro about yourself goes here — this is the normal page content that appears once someone scrolls past the hero.
+
 some more text
-## Other sample
+
+## Another headline
+
+### Some more headlines
+
+## And even one more!
+
+## And this one
+
+thats true!

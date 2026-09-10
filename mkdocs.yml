@@ -1,4 +1,4 @@
-site_name: CherrySite
+site_name: CherryHub
 site_description: Math blog & code showcases
 site_url: https://maracujadev.github.io
 
@@ -24,12 +24,13 @@ theme:
   features:
     - navigation.tabs
     - content.tooltips
+    - search.suggest
 
 nav:
   - Homepage: index.md
   - Articles:
     - Blog Home: blog/index.md
-  - About me: aboutme.md
+  - About me: about.md
 
 plugins:
   - search
@@ -40,6 +41,7 @@ plugins:
   - pdf-export
 
 markdown_extensions:
+  - md_in_html
   - pymdownx.arithmatex:
       generic: true
 
@@ -51,5 +53,15 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
-  generator: false
+#  generator: false
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@mathyard
+      name: Mathyard on Mastodon
+    - icon: fontawesome/brands/github
+      link: https://github.com/maracujadev
+      name: Maracujadev on GitHub
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/metacyclinemachine/
+      name: Metacyclinemachine on GitHub
 

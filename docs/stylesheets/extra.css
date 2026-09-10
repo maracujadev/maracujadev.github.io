@@ -1,12 +1,1 @@
-/* Hide the header bar only on the homepage, so icons/text sit directly on the image */
-body[data-md-color-scheme] .homepage .md-header {
-  background: transparent !important;
-  box-shadow: none !important;
-  position: absolute;
-}
-
-.homepage .md-header__title,
-.homepage .md-tabs {
-  display: none;
-}
 
