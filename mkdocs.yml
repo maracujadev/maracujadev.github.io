@@ -2,6 +2,10 @@ site_name: CherrySite
 site_description: Math blog & code showcases
 site_url: https://maracujadev.github.io
 
+repo_url: https://github.com/maracujadev
+repo_name: My GitHub Profile
+
+
 theme:
   name: material
   palette:
@@ -19,12 +23,20 @@ theme:
         name: Switch to light mode
   features:
     - navigation.tabs
+    - content.tooltips
+
+nav:
+  - Homepage: index.md
+  - Articles:
+    - Blog Home: blog/index.md
+  - About me: aboutme.md
 
 plugins:
   - search
   - blog:
-      post_dir: docs/blog/posts
+      post_dir: blog/posts
       post_url_format: "{slug}"
+      archive: false
   - pdf-export
 
 markdown_extensions:
@@ -34,6 +46,9 @@ markdown_extensions:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   generator: false
