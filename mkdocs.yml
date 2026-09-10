@@ -1,0 +1,40 @@
+site_name: CherrySite
+site_description: Math blog & code showcases
+site_url: https://maracujadev.github.io
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+
+plugins:
+  - search
+  - blog:
+      post_dir: docs/blog/posts
+      post_url_format: "{slug}"
+  - pdf-export
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false
+
