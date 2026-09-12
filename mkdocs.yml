@@ -10,14 +10,14 @@ theme:
   name: material
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
@@ -25,12 +25,13 @@ theme:
     - navigation.tabs
     - content.tooltips
     - search.suggest
+  favicon: assets/favicon.png
 
 nav:
   - Homepage: index.md
   - Articles:
     - Blog Home: blog/index.md
-  - About me: about.md
+  - About: about.md
 
 plugins:
   - search
@@ -38,7 +39,6 @@ plugins:
       post_dir: blog/posts
       post_url_format: "{slug}"
       archive: false
-  - pdf-export
 
 markdown_extensions:
   - md_in_html
@@ -64,4 +64,7 @@ extra:
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/metacyclinemachine/
       name: Metacyclinemachine on GitHub
+    - icon: simple/letterboxd
+      link: https://boxd.it/dCyNv
+      name: Maracuja on Letterboxd
 

@@ -14,7 +14,5 @@ Here is an abstract section.
 <!-- more -->
 
 ## Functionals
-
-## The Fundamental Lemma of Variational Calculus
-
 ## Deriving the Euler-Lagrange Equation
+### The Fundamental Lemma of Variational Calculus

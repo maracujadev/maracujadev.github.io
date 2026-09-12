@@ -5,11 +5,31 @@
          <lastmod>2026-09-10</lastmod>
     </url>
     <url>
-         <loc>https://maracujadev.github.io/aboutme/</loc>
+         <loc>https://maracujadev.github.io/about/</loc>
          <lastmod>2026-09-10</lastmod>
     </url>
     <url>
          <loc>https://maracujadev.github.io/blog/</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://maracujadev.github.io/blog/brachistochrone/</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://maracujadev.github.io/blog/variational-calculus/</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://maracujadev.github.io/blog/lagrangian-mechanics/</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://maracujadev.github.io/blog/category/math/</loc>
+         <lastmod>2026-09-10</lastmod>
+    </url>
+    <url>
+         <loc>https://maracujadev.github.io/blog/category/physics/</loc>
          <lastmod>2026-09-10</lastmod>
     </url>
 </urlset>

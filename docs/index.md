@@ -1,15 +1,24 @@
-## Welcome
+# Welcome to the CherryHub
 
-A short intro about yourself goes here — this is the normal page content that appears once someone scrolls past the hero.
+I'm a mathematics student at the University of Leipzig and teacher / tutor.  
+This is a website for showcasing computational projects and a place where I blog about mathematics for anyone interested in my work.
 
-some more text
+## What you can find here
 
-## Another headline
+### Coding projects
 
-### Some more headlines
+I work on various projects involving programming. Mostly, I write in Python, but I also frequently write solutions in Julia.
+When new stuff is made, you can see it showcased here.
 
-## And even one more!
+- **The CherryBot Discord Bot** - Multi-purpose bot tool for Discord
+- **Orbital** - Julia Simulation of Planetary Orbits
 
-## And this one
+### Math articles
 
-thats true!
+I use this site to post blogs about mathematics. Coming soon, you might also find film theory here.   
+Check out my article on the Calculus of Variations:
+> **[The Elegance of Variational Calculus](https://maracujadev.github.io/blog/variational-calculus/)**, 5 min read
+
+### Teaching resources
+
+This is still a work in progress! Stay up to date.
