@@ -27,11 +27,15 @@ theme:
     - search.suggest
   favicon: assets/favicon.png
 
+copyright: "© Copyright 2026 maracujadev"
+
 nav:
   - Homepage: index.md
   - Articles:
     - Blog Home: blog/index.md
+  - CherryBot: cherrybot.md
   - About: about.md
+
 
 plugins:
   - search
