@@ -7,16 +7,15 @@ categories:
 ---
 # The Elegance of Variational Calculus
 
-### Abstract
-
 What's the fastest path between two points? How do physicists know how light travels? 
 A practical introduction to optimizing functionals.
 
 <!-- more -->
 ### Prerequisites
 
-If you'd like to read this text, you should be fluent single variable calculus. 
+If you'd like to read this text, you should be fluent in single variable calculus. 
 Without knowing what a derivative or integral is, you probably won't get far here. 
+The main results are in form of differential equations. 
 
 ## The Brachistochrone Problem
 
