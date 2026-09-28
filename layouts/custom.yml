@@ -27,7 +27,7 @@ layers:
   - size: { width: 144, height: 144 }
     offset: { x: 992, y: 64 }
     icon:
-      value: octicons/command-palette
+      value: octicons/command-palette-16
       color: "#C97B8C"
 
 definitions:
