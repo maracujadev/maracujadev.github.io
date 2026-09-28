@@ -6,12 +6,12 @@ layers:
     offset: { x: -1024, y: 64 }
     icon:
       value: material/circle
-      color: "#2596BE"
+      color: "#367691"
   - size: { width: 1800, height: 1800 }
     offset: { x: 512, y: -1024 }
     icon:
       value: material/circle
-      color: "#3EC242"
+      color: "#2596BE"
   - size: { width: 832, height: 310 }
     offset: { x: 62, y: 160 }
     typography:
@@ -24,11 +24,23 @@ layers:
       font: 
         family: Geist Mono
         style: Bold
+  - size: { width: 832, height: 80 }
+    offset: { x: 62, y: 480 }
+    typography:
+      content: "{{ page.meta.get('subtitle', config.site_description) }}"
+      align: start
+      color: "#C97B8C"
+      line:
+        amount: 2
+        height: 1.25
+      font:
+        family: Geist Mono
+        style: Regular
   - size: { width: 144, height: 144 }
     offset: { x: 992, y: 64 }
     icon:
       value: octicons/command-palette-16
-      color: "#C97B8C"
+      color: "#1f1f31"
 
 definitions:
 
@@ -46,7 +58,6 @@ tags:
 
   og:type: website
   og:title: *page_title_with_site_name
-  og:description: *page_description
   og:image: "{{ image.url }}"
   og:image:type: "{{ image.type }}"
   og:image:width: "{{ image.width }}"
@@ -55,5 +66,4 @@ tags:
 
   twitter:card: summary_large_image
   twitter:title: *page_title_with_site_name
-  twitter:description: *page_description
   twitter:image: "{{ image.url }}"

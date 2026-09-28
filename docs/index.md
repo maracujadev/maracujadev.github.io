@@ -1,3 +1,8 @@
+---
+title: CherryHub
+subtitle: Cherry's math blog & code showcases
+---
+
 # Welcome to the CherryHub
 
 I'm a mathematics student at the University of Leipzig and personal tutor.  
