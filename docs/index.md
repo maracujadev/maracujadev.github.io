@@ -23,3 +23,6 @@ Check out my article on the Calculus of Variations:
 
 This is still a work in progress! I'm planning to upload some study sheets and tutoring materials here. 
 Stay up to date if you care about this.
+
+<script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script>
+<twisty-player alg="R U R' U R U2' R'"></twisty-player>

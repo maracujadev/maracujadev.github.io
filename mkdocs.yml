@@ -7,25 +7,30 @@ repo_name: My GitHub Profile
 
 
 theme:
-  name: material
-  palette:
-    - scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
-  features:
-    - navigation.tabs
-    - content.tooltips
-    - search.suggest
-  favicon: assets/favicon.png
+    name: material
+    font:
+      code: Geist Mono
+      text: Geist Mono
+    palette:
+      - scheme: default
+        primary: custom
+        accent: custom
+        toggle:
+          icon: material/weather-night
+          name: Switch to dark mode
+
+      - scheme: slate
+        primary: custom
+        accent: custom
+        toggle:
+          icon: material/weather-sunny
+          name: Switch to light mode
+
+    features:
+      - navigation.tabs
+      - content.tooltips
+      - search.suggest
+    favicon: assets/favicon.png
 
 copyright: "© Copyright 2026 maracujadev"
 
@@ -39,6 +44,10 @@ nav:
 
 plugins:
   - search
+  - social:
+      cards_layout_dir: layouts
+      cards_layout: custom
+      debug: false
   - blog:
       post_dir: blog/posts
       post_url_format: "{slug}"
@@ -69,8 +78,7 @@ extra:
       name: Maracujadev on GitHub
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/metacyclinemachine/
-      name: Metacyclinemachine on GitHub
+      name: Metacyclinemachine on Instagram
     - icon: simple/letterboxd
       link: https://boxd.it/dCyNv
       name: Maracuja on Letterboxd
-
