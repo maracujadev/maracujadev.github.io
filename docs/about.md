@@ -14,8 +14,8 @@ This blog was originally started in September 2026. I cannot guarantee regular u
 ### Experience
 
 - **Abitur / High school diploma** - 2026, Average of 1.5
-- **B.Sc. Mathematics** - 2026 - (2029), University of Leipzig
-- **Professional tutor of mathematics & chemistry**, April 2026 - Present
+- **B.Sc. Mathematics** - 2026 - (2029), Leipzig University
+- **Professional tutor in mathematics & chemistry**, April 2026 - Present
 
 
 ## How to contact me

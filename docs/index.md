@@ -5,7 +5,7 @@ subtitle: Cherry's math blog & code showcases
 
 # Welcome to the CherryHub
 
-I'm a mathematics student at the University of Leipzig and personal tutor.  
+I'm a mathematics student at the University of Leipzig and personal tutor.
 This is a website for showcasing computational projects and a place where I blog about mathematics for anyone interested in my work.
 
 ## What you can find here
@@ -28,6 +28,8 @@ Check out my article on the Calculus of Variations:
 
 This is still a work in progress! I'm planning to upload some study sheets and tutoring materials here. 
 Stay up to date if you care about this.
+
+Expect articles on math expressed via Julia scripting or theory behind chess and speedcubing.
 
 <script src="https://cdn.cubing.net/js/cubing/twisty" type="module"></script>
 <twisty-player alg="R U R' U R U2' R'"></twisty-player>

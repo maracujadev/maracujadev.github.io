@@ -38,6 +38,12 @@ nav:
   - Homepage: index.md
   - Articles:
     - Blog Home: blog/index.md
+  - Learn:
+    - learn/index.md
+    - Julia: 
+      - learn/julia/index.md
+    - Differential Equations:
+      - learn/differential-equations/index.md
   - CherryBot: cherrybot.md
   - About: about.md
 
@@ -50,6 +56,11 @@ plugins:
       debug: false
   - blog:
       post_dir: blog/posts
+      post_url_format: "{slug}"
+      archive: false
+  - blog:
+      blog_dir: learn
+      post_dir: learn/posts
       post_url_format: "{slug}"
       archive: false
 
