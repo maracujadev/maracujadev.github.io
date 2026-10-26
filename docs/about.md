@@ -9,7 +9,7 @@ Feel free to read my work or just see the abstracts to know what it's about. If 
    
 In my free time, I enjoy reading poetry, solving Rubik's cubes, cycling, playing chess, analyzing films and making art.   
    
-This blog was originally started in September 2026. I cannot guarantee regular updates or publications.
+This blog was originally started in September 2026. I cannot guarantee regular updates or publications. It's honestly just a for fun project.
 
 ### Experience
 
