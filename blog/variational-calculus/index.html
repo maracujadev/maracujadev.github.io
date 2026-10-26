@@ -87,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-elegance-of-variational-calculus" class="md-skip">
+        <a href="#wip-the-elegance-of-variational-calculus" class="md-skip">
           Skip to content
         </a>
       
@@ -1038,10 +1038,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#function-spaces-functionals" class="md-nav__link">
+  <a href="#basics-in-variational-calculus" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Function Spaces &amp; Functionals
+        Basics in Variational Calculus
       
     </span>
   </a>
@@ -1057,34 +1057,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Deriving the Euler-Lagrange Equation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-fundamental-lemma-of-variational-calculus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Fundamental Lemma of Variational Calculus
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-euler-lagrange-equation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Euler-Lagrange Equation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1092,6 +1064,17 @@
     <span class="md-ellipsis">
       
         Solving the Brachistochrone Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-vc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applications of VC
       
     </span>
   </a>
@@ -1135,7 +1118,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2026-09-13 00:00:00+00:00" class="md-ellipsis">September 13, 2026</time>
+                        <time datetime="2026-10-26 00:00:00+00:00" class="md-ellipsis">October 26, 2026</time>
                       </div>
                     </li>
                     
@@ -1157,7 +1140,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              1 min read
+                              4 min read
                             
                           </span>
                         </div>
@@ -1184,29 +1167,50 @@
   
 
 
-<h1 id="the-elegance-of-variational-calculus">The Elegance of Variational Calculus</h1>
+<h1 id="wip-the-elegance-of-variational-calculus">[WIP] The Elegance of Variational Calculus</h1>
 <p>What's the fastest path between two points? How do physicists know how light travels? 
 A practical introduction to optimizing functionals.</p>
 <!-- more -->
-<h3 id="prerequisites">Prerequisites</h3>
+<h2 id="prerequisites">Prerequisites</h2>
 <p>If you'd like to read this text, you should be fluent in single variable calculus. 
 Without knowing what a derivative or integral is, you probably won't get far here. 
-The main results are in form of differential equations. </p>
+The main results are in form of differential equations. Don't feel intimidated if you haven't had much contact with those.</p>
 <h2 id="the-brachistochrone-problem">The Brachistochrone Problem</h2>
-<h2 id="function-spaces-functionals">Function Spaces &amp; Functionals</h2>
+<p><em>Problem setup</em></p>
+<p>As you can see, using some basic physics and calculus, we can rearrange the problem of finding the optimal curve to optimizing the following function for a <span class="arithmatex">\(y\)</span> that gives the smallest <span class="arithmatex">\(T[y]\)</span>.<br />
+<span class="arithmatex">\(T[y]=\int_{x_1}^{x_2} \frac{\sqrt{1+y'^2}}{\sqrt{2gy}}dx\)</span><br />
+For now, this might seem like just another complicated way to write the same problem. But bear with me, this will be our way to success later on. However, before being able to explore this problem better, we should take a brief sidetrack into the theory of so-called "Variational Calculus".</p>
+<h2 id="basics-in-variational-calculus">Basics in Variational Calculus</h2>
+<p>The following section of this article will focus on proving the main result in Variational Calculus. 
+Developing the "Euler-Lagrange Equation" will be the climax of this topic for most purposes. The result is highly elegant,
+in fact deserving of the title as my personal favorite equation, but note that the derivation of it will be quite intense.
+Make sure to take your time following the steps or possibly skim it if you don't feel well-versed in calculus. </p>
 <h2 id="deriving-the-euler-lagrange-equation">Deriving the Euler-Lagrange Equation</h2>
-<h3 id="the-fundamental-lemma-of-variational-calculus">The Fundamental Lemma of Variational Calculus</h3>
-<p>Before being able to rigorously finish our journey to the main result of this piece of mathematics, we need to take a small detour.<br />
-To derive the actual useful formula, there is one more Lemma we need to prove. But stay with me, it's fairly doable. <br />
-<strong>The Fundamental Lemma</strong>   </p>
-<details class="note">
-<summary>Proof</summary>
-<p>Suppose ..</p>
-</details>
-<h3 id="the-euler-lagrange-equation">The Euler-Lagrange Equation</h3>
-<p>After applying the Fundamental Lemma to Equation X, we receive the following:
-$$ $$</p>
+<p>In the following, we will try to establish a necessary condition for a function <span class="arithmatex">\(f\)</span> to be extremal considering a functional.
+Remember that the condition is not sufficient, yet going from the entire function space to the solutions of a differential equation is highly useful for our studies.<br />
+In the following, consider this shape of functional:</p>
+<div class="arithmatex">\[J[y]:=\int_{x_1}^{x_2} L(x,y(x),y'(x))dx\]</div>
+<p>Here, <span class="arithmatex">\(L(x,y(x),y'(x))\)</span> shall be a given function that is at least twice continuously differentiable. The function <span class="arithmatex">\(y\)</span> is our independent variable. It shall be twice continuously differentiable and satisfy the boundary conditions <span class="arithmatex">\(y(x_1)=y_1, y(x_2)=y_2\)</span>.
+Now, we use a perturbation on our functional. That perturbation is a twice continuously differentiable function commonly denoted <span class="arithmatex">\(\eta(x)\)</span>. The considered point/function where <span class="arithmatex">\(J[y]\)</span> reaches a local minimum/maximum shall be called <span class="arithmatex">\(f\)</span>.
+We are now dealing with a new function <span class="arithmatex">\(H(\epsilon):=J[y+\epsilon\eta]\)</span>. Notice that to keep the edge conditions we need to set <span class="arithmatex">\(\eta(x_1)=\eta(x_2)=0\)</span>.<br />
+ This now means that
+our new function <span class="arithmatex">\(H(\epsilon)\)</span> has a minimum at <span class="arithmatex">\(\epsilon = 0\)</span>. This goes analogously to the standard method in single variable calculus. 
+We can now say that </p>
+<div class="arithmatex">\[H'(0)=\frac{dH}{d\epsilon}\Big|_{\epsilon=0}=\int_{x_1}^{x_2}\frac{dL}{d\epsilon}\Big|_{\epsilon=0}dx=0.\]</div>
+<p>Consider <span class="arithmatex">\(y=f+\epsilon\cdot\eta\)</span> as a function of <span class="arithmatex">\(\epsilon\)</span>. The term inside the integral can be replaced using the derivative of <span class="arithmatex">\(L\)</span> with respect to <span class="arithmatex">\(\epsilon\)</span>. </p>
+<div class="arithmatex">\[\frac{dL}{d\epsilon}=\frac{\partial L}{\partial y}\frac{dy}{d\epsilon}+\frac{\partial L}{\partial y'}\frac{dy'}{d\epsilon}=\frac{\partial L}{\partial y}\eta+\frac{\partial L}{\partial y'}\eta'\]</div>
+<p>Notice that the last step follows directly from our definition for <span class="arithmatex">\(\eta\)</span> since <span class="arithmatex">\(y=f+\epsilon\eta, y'=f'+\epsilon\eta'\)</span> which means that <span class="arithmatex">\(\frac{dy}{d\epsilon}=\eta\)</span> and <span class="arithmatex">\(\frac{dy'}{d\epsilon}=\eta'\)</span>.  </p>
+<p>This result is highly valuable to us, as we can now rewrite our expression for the integral above.</p>
+<div class="arithmatex">\[\int_{x_1}^{x_2}\frac{dL}{d\epsilon}\Big|_{\epsilon=0}dx=\int_{x_1}^{x_2}\left( \frac{\partial L}{\partial f}\eta+\frac{\partial L}{\partial f'}\eta' \right)dx\]</div>
+<p>Notice that <span class="arithmatex">\(y\)</span> becomes <span class="arithmatex">\(f\)</span> as we applied the condition <span class="arithmatex">\(\epsilon=0\)</span>. Performing an integration by parts on this expression:</p>
+<div class="arithmatex">\[0=\int_{x_1}^{x_2}\left( \frac{\partial L}{\partial f}\eta+\frac{\partial L}{\partial f'}\eta' \right)dx = \int_{x_1}^{x_2}\frac{\partial L}{\partial f}\eta \; dx+ \frac{\partial L}{\partial f'}\eta\Big|_{x_1}^{x_2}-\int_{x_1}^{x_2}\eta\frac{d}{dx}\frac{\partial L}{\partial f'} \; dx\]</div>
+<div class="arithmatex">\[=\int_{x_1}^{x_2}\left( \frac{\partial L}{\partial f}\eta - \eta\frac{d}{dx}\frac{\partial L}{\partial f'} \right)dx\]</div>
+<p>It becomes clear that the boundary term must vanish since we earlier defined that <span class="arithmatex">\(\eta\)</span> evaluated at both <span class="arithmatex">\(x_1\)</span> and <span class="arithmatex">\(x_2\)</span> has to be <span class="arithmatex">\(0\)</span>.</p>
+<p>We now have the result that for every perturbation <span class="arithmatex">\(\eta\)</span> of the function <span class="arithmatex">\(f\)</span>:</p>
+<div class="arithmatex">\[ \int_{x_1}^{x_2}\left( \frac{\partial L}{\partial f} - \frac{d}{dx}\frac{\partial L}{\partial f'} \right)\eta \; dx =0\]</div>
+<p>This can be finished off using the "Fundamental Lemma of Variational Calculus". </p>
 <h2 id="solving-the-brachistochrone-problem">Solving the Brachistochrone Problem</h2>
+<h2 id="applications-of-vc">Applications of VC</h2>
 
 
 
